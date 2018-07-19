@@ -16,14 +16,14 @@ panic = "abort"
 
 [dependencies]
 pwasm-abi = { path = "..", version = "0.1" }
-quote = "0.3"
-syn = { version = "0.11", features = ["full"] }
-tiny-keccak = { version = "1", default-features = false }
-byteorder = { version = "1", default-features = false }
-parity-hash = { version = "1", default-features = false }
-serde = { version = "1", default-features = false }
+quote = "0.6.3"
+syn = { version = "0.14.4", features = ["full"] }
+tiny-keccak = { version = "1.4.2", default-features = false }
+byteorder = { version = "1.2.3", default-features = false }
+parity-hash = { version = "1.2.0", default-features = false }
+serde = { version = "1.0.70", default-features = false }
 serde-json-core = {git = "https://github.com/Pzixel/serde-json-core.git", branch = "feature/alloc", features = ["alloc"]}
-serde_derive = { version = "1", default-features = false }
+serde_derive = { version = "1.0.70", default-features = false }
 
 [lib]
 name = "pwasm_abi_derive"
